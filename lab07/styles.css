@@ -3,8 +3,8 @@ p,dt,dd,tr,th,caption {color: #094e86;}
 h1,h2 {background-color: #ff5d8f;}
 a:visited {color:#808080;}
 a:hover {color: #000000}
-nav {background-color: #ff87ab;}
 nav a {color:#ffffff;}
 nav a:hover {background-color:#1f5e91;}
-nav {padding:10px;
+nav {background-color: #ff87ab;
+    padding:10px;
     margin-bottom:30px;}

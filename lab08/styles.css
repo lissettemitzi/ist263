@@ -1,0 +1,22 @@
+body {background-color:#f5f5f5;
+     color:#094e86;}
+h1,h2 {background-color: #ff5d8f;}
+a:visited {color:#808080;}
+a:hover {color: #000000}
+nav a {color:#ffffff;}
+nav a:hover {background-color:#1f5e91;}
+nav {background-color: #ff87ab;
+    padding:10px;
+    margin-bottom:30px;}
+.quote {float: right;
+     margin-top: 0px;}
+.row1, .row2 {display: flex;
+     margin-bottom:20px;
+     padding:10px;
+     border-radius:10px;
+     background-color:#ff5d8f;}
+
+.row1 div, .row2 div {
+     flex:1;
+     margin-right: 20px;
+}

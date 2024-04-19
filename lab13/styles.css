@@ -8,7 +8,7 @@ h1,h2 {background-color: #ff5d8f;
           margin-bottom:20px;
           font-size: 2em;}
 .intro {margin:35px;}
-a:visited {color:#808080;}
+a:visited {color:#000080;}
 a:hover {color: #000000}
 nav a {color:#ffffff;}
 nav a:hover {background-color:#1f5e91;}

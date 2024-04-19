@@ -109,8 +109,8 @@ body {
  }
  
  .skip {
-     background-color: #4287f5; /* New color */
-     color: #ffffff; /* Adjusted text color for better contrast */
+     background-color: #ffffff; 
+     color: #000000; 
      padding: 4px 8px;
      border: 2px solid #000000;
      text-decoration: none;

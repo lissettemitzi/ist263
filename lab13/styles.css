@@ -62,10 +62,9 @@ nav {background-color: #ff87ab;
 }
 
 .skip {
-     background-color: #f0f8ff;
+     background-color: #000080;
      padding: 4px 8px;
      border: 2px solid #000000;
-     color:#000000;
      text-decoration: none;
      position: absolute;
      top: 10px;

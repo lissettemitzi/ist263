@@ -6,7 +6,7 @@ body {
  }
  
  h1, h2 {
-     background-color: #ff5d8f;
+     background-color: #ffd1e0;
      color: #000000;
      font-size: 1.5em;
  }
@@ -22,7 +22,7 @@ body {
  }
  
  a:visited {
-     color: #000080;
+     color:#383535;
  }
  
  a:hover {
@@ -30,14 +30,14 @@ body {
  }
  
  nav {
-     background-color: #ff87ab;
+     background-color: #fa9ab7;
      padding: 10px;
      margin-bottom: 30px;
-     color: #333333; /* Darker text color for better readability */
+     color: #000000; /* Darker text color for better readability */
  }
  
  nav a {
-     color: #333333;
+     color: #000000;
  }
  
  nav a:hover {
@@ -51,17 +51,15 @@ body {
      margin-top: 0px;
  }
  
- .row1,
- .row2 {
+ .row1,.row2 {
      display: flex;
      margin-bottom: 20px;
      padding: 10px;
      border-radius: 10px;
-     background-color: #ff5d8f;
+     background-color: #fa9ab8;
  }
  
- .row1 div,
- .row2 div {
+ .row1 div,.row2 div {
      flex: 1;
      margin-right: 20px;
  }
@@ -123,3 +121,5 @@ body {
      right: 10px;
  }
  
+
+

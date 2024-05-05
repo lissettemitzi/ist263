@@ -33,7 +33,7 @@ nav {
 .navsplit a {
     display: block;
     text-decoration: none;
-    color: #FFFFFF; /* White */
+    color: #000000; 
     padding: 10px;
     text-align: center;
 }
@@ -199,6 +199,11 @@ input[type="checkbox"]:checked + .mode-switch-label::after {
 .darkmode nav {
     background-color: #122947;
 }
+
+.darkmode .navsplit a {
+    color:#FFFFFF;
+}
+
 .darkmode .linked {
     color: #eee;
 
@@ -214,8 +219,3 @@ input[type="checkbox"]:checked + .mode-switch-label::after {
         flex: 1;
     }
 }
-
-
-
-
-

@@ -108,18 +108,16 @@ nav {
 }
 
 .tclyrics,.tslyrics{
+    max-width: 60%; 
+    margin-right: 5%;
+    overflow: hidden;
+}
+
+.poolsummer, .wintersunset {
     max-width: 45%; 
-    margin-right: 50px;
-}
-
-.poolsummer{ 
-    max-width: 50%;
-    max-height: 70%;
-}
-
-.wintersunset{
-    max-width: 60%;
-    max-height: 80%;
+    width: 100%;
+    margin-right: 5%;
+    overflow: hidden;
 }
 
 .summerrecs, .winterrecs {
@@ -209,20 +207,15 @@ input[type="checkbox"]:checked + .mode-switch-label::after {
 
 @media only screen and (max-width: 768px) {
     .about {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .about p {
         flex: 1;
     }
-
-    .tsfacts, .tcfacts {
-        max-width: 90vw;
-        margin-right: 5%;
-    }
-
-    .tclyrics, .tslyrics {
-        max-width: 90%;
-        margin-right: 5%;
-    }
 }
+
+
+
+
+

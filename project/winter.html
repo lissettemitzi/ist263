@@ -5,20 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
         <link rel="stylesheet" href="project.css">
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const modeSwitch = document.getElementById('modeSwitch');
-                const body = document.body;
-    
-                modeSwitch.addEventListener('change', function() {
-                    if (this.checked) {
-                        body.classList.add('dark-mode');
-                    } else {
-                        body.classList.remove('dark-mode');
-                    }
-                });
-            });
-        </script>
     </head>
 <body>
     <a id="skipLink" class="skiptocontent" href="#skip">Skip to Content</a>
@@ -56,9 +42,25 @@
     <img src="project5media/winterrecs.jpg" alt="5 winter song reccomendations" class="winterrecs">
     <p>These songs provide the exact level of energy that is perfect for a cozy winter day.</p><br>
     <p> On the next page you will get an insight into what makes a "Summer" song and how it is different than a "Winter" song!</p>
+    <div class="mode-toggle">
+        <input type="checkbox" id="modeSwitch">
+        <label for="modeSwitch" class="mode-switch-label"></label>
+    </div>
     <script>
         document.getElementById("skipLink").addEventListener("click", function() {
             this.style.display = "none";
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const modeSwitch = document.getElementById('modeSwitch');
+            const body = document.body;
+
+            modeSwitch.addEventListener('change', function() {
+                if (this.checked) {
+                    body.classList.add('darkmode');
+                } else {
+                    body.classList.remove('darkmode');
+                }
+            });
         });
     </script>
 </body>

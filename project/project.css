@@ -142,9 +142,7 @@ nav {
 .skiptocontent:hover {
     background-color: #000000;
 }
-/* Your existing CSS styles */
 
-/* Toggle switch */
 .mode-toggle {
     position: fixed;
     top: 10px;
@@ -186,24 +184,30 @@ input[type="checkbox"]:checked + .mode-switch-label::after {
     transform: translateX(20px);
 }
 
-/* Dark mode styles */
-.dark-mode {
+
+.darkmode {
     background-color: #1e1e1e;
     color: #eee;
 }
 
-.dark-mode h2, .dark-mode h3 {
+.darkmode h1 {
+    color:#FF80AB;
+}
+
+.darkmode h2, .darkmode h3 {
     background-color: #333;
 }
 
-.dark-mode nav {
-    background-color: #222;
+.darkmode nav {
+    background-color: #122947;
+}
+.darkmode .linked {
+    color: #eee;
+
 }
 
 
-
-
-@media only screen and (mac-width: 768px) {
+@media only screen and (max-width: 768px) {
     .about {
         flex-direction: row;
     }
@@ -214,6 +218,11 @@ input[type="checkbox"]:checked + .mode-switch-label::after {
 
     .tsfacts, .tcfacts {
         max-width: 90vw;
+        margin-right: 5%;
+    }
+
+    .tclyrics, .tslyrics {
+        max-width: 90%;
         margin-right: 5%;
     }
 }

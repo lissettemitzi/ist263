@@ -5,20 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="project.css">
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const modeSwitch = document.getElementById('modeSwitch');
-            const body = document.body;
-
-            modeSwitch.addEventListener('change', function() {
-                if (this.checked) {
-                    body.classList.add('dark-mode');
-                } else {
-                    body.classList.remove('dark-mode');
-                }
-            });
-        });
-    </script>
 </head>
 </body>
 <body>
@@ -28,8 +14,6 @@
             <input type="checkbox" id="modeSwitch">
             <label for="modeSwitch" class="mode-switch-label"></label>
         </div>
-        <!-- Your existing content here -->
-    
     <h1>Soundtracks of the Seasons</h1>
     <nav>
         <div class="navsplit">
@@ -68,9 +52,26 @@
     <p>The reason for this is that I, like many people, associate songs and lyrics with certain seasons. Studies showcase that artists use certain lyrics and beats to claim “Song of the Summer” status. On the other hand, people tend to appreciate more meaningful lyrics and slower tempo music during the Winter. When using Spotify, I have many separate playlists. After taking a look, I realized that I have both a Summer and Winter playlist, both giving off a very different vibe.</p> 
     <p class="linked">Take a glimpse into my <a href="winter.html">Winter Music</a> taste.</p>
     <p class="linked">Take a glimpse into my <a href="summer.html">Summer Music</a> taste.</p>
+    <div class="mode-toggle">
+        <input type="checkbox" id="modeSwitch">
+        <label for="modeSwitch" class="mode-switch-label"></label>
+    </div>
+
     <script>
         document.getElementById("skipLink").addEventListener("click", function() {
             this.style.display = "none";
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const modeSwitch = document.getElementById('modeSwitch');
+            const body = document.body;
+
+            modeSwitch.addEventListener('change', function() {
+                if (this.checked) {
+                    body.classList.add('darkmode');
+                } else {
+                    body.classList.remove('darkmode');
+                }
+            });
         });
     </script>
 </body>

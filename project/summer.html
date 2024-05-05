@@ -1,25 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="project.css">
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const modeSwitch = document.getElementById('modeSwitch');
-                const body = document.body;
-    
-                modeSwitch.addEventListener('change', function() {
-                    if (this.checked) {
-                        body.classList.add('dark-mode');
-                    } else {
-                        body.classList.remove('dark-mode');
-                    }
-                });
-            });
-        </script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="project.css">
+</head>
 <body>
     <a id="skipLink" class="skiptocontent" href="#skip">Skip to Content</a>
     <h1>Soundtracks of the Seasons</h1>
@@ -57,9 +43,26 @@
     <img src="project5media/summerrecs.jpg" alt="5 summer song reccomendations" class="summerrecs">
     <p> These songs provide the exact level of energy that is needed to enjoy the Summer season to the fullest. </p>
     <p>So next time you listen to a song, take a minute and analyze to see what season the artist meant for it to thrive in!</p>
+    <div class="mode-toggle">
+        <input type="checkbox" id="modeSwitch">
+        <label for="modeSwitch" class="mode-switch-label"></label>
+    </div>
+
     <script>
         document.getElementById("skipLink").addEventListener("click", function() {
             this.style.display = "none";
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const modeSwitch = document.getElementById('modeSwitch');
+            const body = document.body;
+
+            modeSwitch.addEventListener('change', function() {
+                if (this.checked) {
+                    body.classList.add('darkmode');
+                } else {
+                    body.classList.remove('darkmode');
+                }
+            });
         });
     </script>
 </body>

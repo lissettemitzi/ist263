@@ -47,23 +47,29 @@
         <input type="checkbox" id="modeSwitch">
         <label for="modeSwitch" class="mode-switch-label"></label>
     </div>
-
+    <footer>
+        <div class="mode-toggle">
+            <input type="checkbox" id="modeSwitchFooter">
+            <label for="modeSwitchFooter" class="mode-switch-label"></label>
+        </div>
+    </footer>
+    
     <script>
         document.getElementById("skipLink").addEventListener("click", function() {
             this.style.display = "none";
         });
         document.addEventListener('DOMContentLoaded', function() {
-            const modeSwitch = document.getElementById('modeSwitch');
-            const body = document.body;
+    const modeSwitchFooter = document.getElementById('modeSwitchFooter');
+    const body = document.body;
 
-            modeSwitch.addEventListener('change', function() {
-                if (this.checked) {
-                    body.classList.add('darkmode');
-                } else {
-                    body.classList.remove('darkmode');
-                }
-            });
-        });
+    modeSwitchFooter.addEventListener('change', function() {
+        if (this.checked) {
+            body.classList.add('darkmode');
+        } else {
+            body.classList.remove('darkmode');
+        }
+    });
+});
     </script>
 </body>
 </html>

@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Songs of the Summer</title>
-    <link rel="stylesheet" href="project.css">
-</head>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="project.css">
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const modeSwitch = document.getElementById('modeSwitch');
+                const body = document.body;
+    
+                modeSwitch.addEventListener('change', function() {
+                    if (this.checked) {
+                        body.classList.add('dark-mode');
+                    } else {
+                        body.classList.remove('dark-mode');
+                    }
+                });
+            });
+        </script>
+    </head>
 <body>
+    <a id="skipLink" class="skiptocontent" href="#skip">Skip to Content</a>
     <h1>Soundtracks of the Seasons</h1>
     <nav>
         <div class="navsplit">
@@ -20,35 +34,33 @@
         <a href="summer.html">Songs of the Summer</a>
         </div>
     </nav>
-    <img src="project5media/beachsand.jpg" alt="Beach with Sand">
-    <p> “This is the song of the Summer” is a phrase that many of us have heard yearly on the radio. But what makes a song, “the song of the Summer?”</p>
+    <img src="project5media/beachsand.jpg" alt="Beach with Sand" class="beachhead">
+    <p id="skip"> “This is the song of the Summer” is a phrase that many of us have heard yearly on the radio. But what makes a song, “the song of the Summer?”</p>
     <p>There are certain songs that people hear and immediately get brought back to the season of warmth and sunshine. The tempo of a summer song usually must be “upbeat but chill according to Sarah Brindell, a songwriting professor at the Berklee College of Music. For many people, a summer song has to be one that they are able to relate to. For artists, this is something that they use to their advantage because things such as going out and feeling the sunshine is something anyone can do.</p>
     <p>Another key element that is used in summer songs is the fact that lyrics are usually “nostalgic or anticipatory.” Artists do this by picking lyrics carefully and making sure that they give of a sense of celebration.</p>
     <p>Out of my top 5 most listened to songs for 2023, the song that would fall under the category of a “Summer” song would be All You’rn by Tyler Childers. </p>
     <h2>All You’rn by Tyler Childers</h2>
-    <ul>
-        <li>Released May 16,2019 </li>
-        <li>Nominated for Best Country Solo Performance at 62nd Annual Grammy Awards </li>
-        <li>300,407,742 total plays on Spotify as of February 2024 </li>
-    </ul>
-    <img src="project5media/tylerchilders.jpg" alt="Tyler Childers">
+    <div class="tccontainer">
+        <img src="project5media/tylerfunfacts.jpg" alt="fun facts about tyler childers' song" class="tcfacts">
+        <img src="project5media/tylerchilders.jpg" alt="Tyler Childers" class="tylerchilders">
+    </div>
     <h3>What makes this a Summer song?</h3>
     <p> The lyrics! The lyrics of this song, embody everything that Sarah Brindell mentioned. Below, some of the many lyrics are highlighted that give off the feeling of nostalgia and celebration that Brindell mentioned.</p>
     <p> Take a look below!</p>
-    <img src="project5media/allyourn.jpg" alt="all yourn lyrics">
-    <img src="project5media/poolsummer.jpg" alt="Pool in the Summer">
+    <div class="lyricstc">
+        <img src="project5media/allyourn.jpg" alt="all yourn lyrics" class="tclyrics">
+        <img src="project5media/poolsummer.jpg" alt="Pool in the Summer" class="poolsummer">
+    </div>
     <p>The tempo!</p>
     <p>The overall tempo of this song is a chill relaxing one! Right away, it is obvious that this is a love song. He uses soothing instruments such as a piano and guitar throughout the song and brings to life the elements of nostalgia and love that his lyrics portray!</p>
     <p>Other songs that have popped up in my recommended that are considered “Summer Songs”: </p>
-    <ul>
-        <li>"Blinding Lights" by The Weeknd</li>
-        <li>"Watermelon Sugar" by Harry Styles</li>
-        <li>"Levitating" by Dua Lipa ft. DaBaby </li>
-        <li>"Sunflower" by Post Malone & Swae Lee </li>
-        <li> "Roses (Imanbek Remix)" by SAINt JHN </li>
-    </ul>
+    <img src="project5media/summerrecs.jpg" alt="5 summer song reccomendations" class="summerrecs">
     <p> These songs provide the exact level of energy that is needed to enjoy the Summer season to the fullest. </p>
     <p>So next time you listen to a song, take a minute and analyze to see what season the artist meant for it to thrive in!</p>
-
+    <script>
+        document.getElementById("skipLink").addEventListener("click", function() {
+            this.style.display = "none";
+        });
+    </script>
 </body>
 </html>
